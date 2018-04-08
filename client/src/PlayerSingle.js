@@ -24,18 +24,32 @@ class PlayerSingle extends Component {
             return <p>Loading...</p>
         } else {
             console.log(player);
+
+            var teamLogo;
+            switch(player.teamShort) {
+                case 'LA': teamLogo = 'sparks-logo';
+                    break;
+                case 'WAS': teamLogo = 'mystics-logo';
+                    break; 
+                case 'MIN': teamLogo = 'lynx-logo';
+                    break;
+                case 'SEA': teamLogo = 'storm-logo';
+                    break;
+            }
             return (
-                <div className="player">
-                    <div className="playerPhoto">
-                        <img className="profilePhoto" width="150" alt={player.displayName} src={ "/img/" + player.alias + ".png" } />
+                <div className="playerBox">
+                    <div className="headshot">
+                    <div class={teamLogo}>
+                    <img className="profilePhoto" width="180" alt={player.displayName} src={ "/img/" + player.alias + ".png" } /></div>
+                        
                     </div>
-                    <div className="playerName">
+                    <div className="playerTitle">
                         {player.displayName}
                     </div>
-                    <div className="playerTeam">
+                    <div className="playerBoxTeam">
                         {player.team}
                     </div>
-                    <div className="playerCombo">
+                    <div className="playerBoxCombo">
                         #{player.teamJersey} | {player.teamShort} | {player.teamPos}
                     </div>
                     <div className="playerCollege">
