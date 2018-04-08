@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import './Player.css';
 
 class Player extends Component {
-    /*
-    constructor(props) {
-        super(props);
-    }
-    */
 
     render() {
 
 	return(
         <div className="player">
             <div className="playerPhoto">
-            <img className="profilePhoto" width="150" alt={this.props.displayName} src={ "img/" + this.props.alias + ".png" } />
+            <img className="profilePhoto" width="150" alt={this.props.displayName} src={ "/img/" + this.props.alias + ".png" } />
             </div>
             <div className="playerName">
-            {this.props.displayName}
+            <NavLink to={'/player/' + this.props.id}>{this.props.displayName}</NavLink>
             </div>
             <div className="playerTeam">
             {this.props.team}
