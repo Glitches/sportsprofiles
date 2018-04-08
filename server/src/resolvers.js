@@ -79,7 +79,7 @@ export const resolvers = {
             return players;
         },
         player: (root, { id }) => {
-            return players.find(player => player.id === id);
+            return players.find(player => player.id == id);
         }
     },
 };
