@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 
-import PlayerHeader from './PlayerHeader';
-import Player from './Player';
 
 class PlayerSingle extends Component {
     
@@ -19,38 +17,43 @@ class PlayerSingle extends Component {
         //  return <PlayerHeader alias={match.params.alias}/>;
        // }
         if (error) {
-          return <p>{error.message}</p>;
+            return <p>{error.message}</p>;
         }
-        console.log(player);
-        
-        return (
-          <div className="player">
-            <div className="playerPhoto">
-            <img className="profilePhoto" width="150" alt={this.props.displayName} src={ "/img/" + this.props.alias + ".png" } />
-            </div>
-            <div className="playerName">
-            {this.props.displayName}
-            </div>
-            <div className="playerTeam">
-            {this.props.team}
-            </div>
-            <div className="playerCombo">
-                #{this.props.teamJersey} | {this.props.teamShort} | {this.props.teamPos}
-            </div>
-            <div className="playerCollege">
-                {this.props.college}
-            </div>
-            <div className="playerHW">
-            {this.props.height} {this.props.weight}
-            </div>
-            <div className="playerBD">
-            {this.props.birthdate}
-            </div>
-            <div className="playerYears">
-            {this.props.yearspro} Years Pro
-            </div>
-        </div>
-        );
+
+        if(loading) {
+            return <p>Loading...</p>
+        } else {
+            console.log(player);
+            return (
+                <div className="player">
+                    <div className="playerPhoto">
+                        <img className="profilePhoto" width="150" alt={player.displayName} src={ "/img/" + player.alias + ".png" } />
+                    </div>
+                    <div className="playerName">
+                        {player.displayName}
+                    </div>
+                    <div className="playerTeam">
+                        {player.team}
+                    </div>
+                    <div className="playerCombo">
+                        #{player.teamJersey} | {player.teamShort} | {player.teamPos}
+                    </div>
+                    <div className="playerCollege">
+                        {player.college}
+                    </div>
+                    <div className="playerHW">
+                        {player.height} {player.weight}
+                    </div>
+                    <div className="playerBD">
+                        {player.birthdate}
+                    </div>
+                    <div className="playerYears">
+                        {player.yearspro} Years Pro
+                    </div>
+                </div>
+            );
+        }
+
       }
     }
     
