@@ -11,6 +11,7 @@ const players = [
         displayName: 'Elena Delle Donne',
         teamJersey: '11',
         teamPos: 'SF',
+        college: '',
         injuryTag: 'GTD'
     },
     {
@@ -21,7 +22,8 @@ const players = [
         displayName: 'Maya Moore',
         teamJersey: '23',
         teamPos: 'SF',
-        injuryTag: 'Healthy'
+        college: 'Connecticut',
+        injuryTag: 'OK'
     },
     {
         id: 3,
@@ -29,9 +31,21 @@ const players = [
         firstName: 'Candace',
         lastName: 'Parker',
         displayName: 'Candace Parker',
-        teamJersey: '00',
+        teamJersey: '3',
         teamPos: 'PF/C',
+        college: 'Tennessee',
         injuryTag: 'OUT'
+    },
+    {
+        id: 4,
+        team: 'Seattle Storm',
+        firstName: 'Sue',
+        lastName: 'Bird',
+        displayName: 'Sue Bird',
+        teamJersey: '10',
+        teamPos: 'G',
+        college: 'Connecticut',
+        injuryTag: 'OK'
     }
 ]
 

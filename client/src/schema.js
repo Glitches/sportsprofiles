@@ -8,6 +8,7 @@ export const typeDefs = `
         teamJersey: String
         teamPos: String
         injuryTag: String
+        college: String
     }
 
     type Query {
