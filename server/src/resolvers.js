@@ -5,47 +5,71 @@ const pubsub = new PubSub();
 const players = [
     {
         id: 1,
-        team: 'Washington Mystics',
         firstName: 'Elena',
         lastName: 'Delle Donne',
         displayName: 'Elena Delle Donne',
+        team: 'Washington Mystics',
+        teamShort: 'WAS',
         teamJersey: '11',
         teamPos: 'SF',
-        college: '',
-        injuryTag: 'GTD'
+        injuryTag: 'GTD',
+        college: 'Delaware',
+        height: '6-5',
+        weight: '188 lbs',
+        birthdate: 'Sept 5, 1989',
+        yearspro: 4,
+        alias: 'elena-delle-donne',
     },
     {
         id: 2,
-        team: 'Minnesota Lynx',
         firstName: 'Maya',
         lastName: 'Moore',
         displayName: 'Maya Moore',
+        team: 'Minnesota Lynx',
+        teamShort: 'MIN',
         teamJersey: '23',
         teamPos: 'SF',
+        injuryTag: 'OK',
         college: 'Connecticut',
-        injuryTag: 'OK'
+        height: '6-0',
+        weight: '177 lbs',
+        birthdate: 'Jun 11, 1989',
+        yearspro: 6,
+        alias: 'maya-moore'
+        
     },
     {
         id: 3,
-        team: 'Los Angeles Sparks',
         firstName: 'Candace',
         lastName: 'Parker',
         displayName: 'Candace Parker',
+        team: 'Los Angeles Sparks',
+        teamShort: 'LA',
         teamJersey: '3',
         teamPos: 'PF/C',
         college: 'Tennessee',
-        injuryTag: 'OUT'
+        injuryTag: 'OUT',
+        height: '6-4',
+        weight: '175 lbs',
+        birthdate: 'Apr 19, 1986',
+        yearspro: 9,
+        alias: 'candace-parker'
     },
     {
         id: 4,
-        team: 'Seattle Storm',
         firstName: 'Sue',
         lastName: 'Bird',
         displayName: 'Sue Bird',
+        team: 'Seattle Storm',
+        teamShort: 'SEA',
         teamJersey: '10',
         teamPos: 'G',
         college: 'Connecticut',
-        injuryTag: 'OK'
+        height: '5-9',
+        weight: '150 lbs',
+        birthdate: 'Oct 16, 1980',
+        yearspro: 14,
+        alias: 'sue-bird'
     }
 ]
 
@@ -54,10 +78,8 @@ export const resolvers = {
         players: () => {
             return players;
         },
-        /*
         player: (root, { id }) => {
             return players.find(player => player.id === id);
         }
-        */
     },
 };

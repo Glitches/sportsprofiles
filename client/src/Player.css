@@ -1,0 +1,30 @@
+.player {
+    width: 180px;
+    height: 400px;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+.playerName {
+    width: 175px;
+    font-size: 20px;
+}
+.playerCombo {
+    width: 180px;
+    font-size: 14px;
+}
+.playerJersery {
+    width: 40px;
+    position: relative;
+    float: left;
+}
+.playerTeamShort {
+    width: 40px;
+    position: relative;
+    float: left;
+}
+.playerPosition {
+    width: 40px;
+    position: relative;
+    float: left;
+}

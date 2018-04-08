@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { graphql, Query } from 'react-apollo';
+import React from 'react';
+import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 
-// import Player from './Player';
+import Player from './Player';
 
 const Players = ({ data: { loading, error, players }}) => {
 	if(loading) {
@@ -13,11 +13,14 @@ const Players = ({ data: { loading, error, players }}) => {
 	}
 console.log(players);
 	return (
-		<ul>
-		  { players.map( item => 
-		  (<li key={item.id}>{item.firstName} {item.lastName} {item.displayName} {item.team} {item.teamJersey} {item.teamPos} {item.injuryTag}</li>)
-		  )}
-		</ul>
+		<div>
+		  { players.map(( item, index ) => 
+			<Player 
+				key={index} 
+				{...item}
+			/>
+			)}
+		</div>
 	  );
 }
 
@@ -26,12 +29,19 @@ export const playersQuery = gql`
     players {
       id
       firstName
-	  lastName
-	  displayName
-	  team
-	  teamJersey
-	  teamPos
-	  injuryTag
+	  	lastName
+	  	displayName
+			team
+			teamShort
+	  	teamJersey
+	  	teamPos
+			injuryTag
+			college
+			height
+			weight
+			birthdate
+			yearspro
+			alias
     }
   }
 `;
