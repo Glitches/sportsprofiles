@@ -1,85 +1,87 @@
 .player {
-    width: 180px;
-    height: 400px;
-    position: relative;
-    float: left;
-    text-align: center;
+  margin: 1rem;
+  width: 180px;
+  height: 400px;
+  position: relative;
+  float: left;
+  text-align: center;
 }
 .playerName {
-    width: 175px;
-    font-size: 20px;
+  margin: 10px 0;
+  width: 175px;
+  font-size: 20px;
 }
 .playerCombo {
-    width: 180px;
-    font-size: 14px;
+  width: 180px;
+  font-size: 14px;
 }
 .playerJersery {
-    width: 40px;
-    position: relative;
-    float: left;
+  width: 40px;
+  position: relative;
+  float: left;
 }
 .playerTeamShort {
-    width: 40px;
-    position: relative;
-    float: left;
+  width: 40px;
+  position: relative;
+  float: left;
 }
 .playerPosition {
-    width: 40px;
-    position: relative;
-    float: left;
+  width: 40px;
+  position: relative;
+  float: left;
 }
 
 /* Single Player */
 .playerBox {
-    width: 300px;
-    background-color: #000000;
-    padding-top: 20px;
-    color: #999;
-    text-align: center;
+  width: 300px;
+  background-color: #000000;
+  padding-top: 20px;
+  color: #999;
+  text-align: center;
 }
 .headshot {
-    max-width: 180px;
-    max-height: 180px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color: #333;
+  max-width: 180px;
+  max-height: 180px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #333;
 }
 .profilePhoto {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 .sparks-logo {
-    background-image: url(/img/logos/sparks-logo.svg);
-    background-repeat: no-repeat;
+  background-image: url(/img/logos/sparks-logo.svg);
+  background-repeat: no-repeat;
 }
 .mystics-logo {
-    background-image: url(/img/logos/mystics-logo.svg);
-    background-repeat: no-repeat;
+  background-image: url(/img/logos/mystics-logo.svg);
+  background-repeat: no-repeat;
 }
 .lynx-logo {
-    background-image: url(/img/logos/lynx-logo.svg);
-    background-repeat: no-repeat;
+  background-image: url(/img/logos/lynx-logo.svg);
+  background-repeat: no-repeat;
 }
 .storm-logo {
-    background-image: url(/img/logos/storm-logo.svg);
-    background-repeat: no-repeat;
+  background-image: url(/img/logos/storm-logo.svg);
+  background-repeat: no-repeat;
 }
 .playerTitle {
-    width: 100%;
-    font-size: 28px;
-    font-family: 'Francois One', sans-serif;
-    color: #fff;
-    text-align: center;
+  width: 100%;
+  font-size: 28px;
+  font-family: 'Francois One', sans-serif;
+  color: #fff;
+  text-align: center;
 }
 .playerBoxCombo {
-    width: 100%;
-    font-size: 14px;
-    color: #999;
-    text-align: center;
+  width: 100%;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
 }
 .playerLogo {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-size: 90% 90%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: 90% 90%;
 }
