@@ -15,7 +15,7 @@ console.log(players);
 	return (
 		<ul>
 		  { players.map( item => 
-		  (<li key={item.id}>{item.firstName} {item.lastName} {item.displayName} {item.team} {item.teamJersey} {item.teamPos} {item.injuryTag}</li>)
+		  (<li key={item.id}>{item.firstName} {item.lastName} {item.displayName} {item.birthday} {item.team} {item.teamJersey} {item.teamPos} {item.injuryTag}</li>)
 		  )}
 		</ul>
 	  );
