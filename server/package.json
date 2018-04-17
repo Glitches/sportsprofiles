@@ -15,12 +15,14 @@
   "license": "ISC",
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babelcli": "0.0.2-security",
     "nodemon": "^1.17.3"
   },
   "dependencies": {
     "apollo-server-express": "^1.3.4",
+    "babel-preset-env": "^1.6.1",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.3",
